@@ -1,0 +1,38 @@
+@reference "../../app/globals.css";
+
+/* Stacks form fields vertically with consistent spacing */
+.form {
+  @apply flex flex-col gap-5 w-full max-w-sm mx-auto mt-8;
+}
+
+/* Label + input stacked vertically */
+.fieldGroup {
+  @apply flex flex-col gap-1;
+}
+
+.label {
+  @apply text-sm font-medium text-body;
+}
+
+.input {
+  @apply w-full bg-lighter text-heading rounded-lg px-3 py-2 outline-none border border-transparent focus:border-primary transition-colors duration-200;
+}
+
+/* Wraps the password input and the show/hide toggle button */
+.passwordWrapper {
+  @apply relative flex items-center;
+}
+
+/* The icon button sits inside the right edge of the input */
+.toggleBtn {
+  @apply absolute right-3 text-body hover:text-heading transition-colors duration-200 cursor-pointer;
+}
+
+/* "Switch to other form" prompt below the submit button */
+.switchText {
+  @apply text-sm text-center text-body;
+}
+
+.switchText a {
+  @apply text-primary hover:text-secondary transition-colors duration-200;
+}
